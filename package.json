@@ -1,0 +1,22 @@
+{
+  "name": "the-type-is-a-lie",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon ./dist/server.js",
+    "build": "npx typescript",
+    "prebuild": "mkdir -p ./dist/src/ && cp -rf ./src/views ./dist/src/",
+    "build:watch": "npx typescript --watch",
+    "build:webpack": "npx webpack",
+    "build:webpack:watch": "npx webpack --watch",
+    "prebuild:watch": "npm run prebuild"
+  },
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "express": "^4.16.3",
+    "nodemon": "^1.18.1",
+    "ts-loader": "^4.4.2",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
