@@ -1,6 +1,6 @@
 type Name = {
-  firstName: String
-  lastName: String
+  firstName: string
+  lastName: string
 };
 
 function Name(firstName: string, lastName: string): Name {
